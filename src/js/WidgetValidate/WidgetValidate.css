@@ -1,0 +1,115 @@
+.widget-card-validation {
+  padding: 15px;
+  display: inline-block;
+}
+
+.form {
+  margin-top: 20px;
+  display: flex;
+}
+
+.form-block {
+  position: relative;
+}
+
+.input-number-card,
+.button-validate {
+  border: 1px solid #818181;
+  border-radius: 5px;
+}
+
+.input-number-card {
+  height: 100%;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.input-number-card:focus {
+  border-color: #61a4db;
+  outline: 0;
+  box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%), 
+                    0 0 8px rgb(102 175 233 / 60%);
+}
+
+.button-validate {
+  padding: 5px  10px;
+  margin-left: 10px;
+  background-color: #56aa56;
+  color: white;
+}
+
+.button-validate:hover {
+  background-color: #3a833a;
+}
+
+.card-list {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.card-item {
+  position: relative;
+  width: 39px;
+  height: 25px;
+  background-position: 0 0;
+}
+
+.card-item:nth-child(n + 2) {
+  margin-left: 5px;
+}
+
+.visa {
+  background-image: url('./../../image/card-visa.gif');
+}
+
+.master {
+  background-image: url('../../image/card-mastercard.gif');
+}
+
+.amex {
+  background-image: url('../../image/card-amex.gif');
+}
+
+.discover {
+  background-image: url('../../image/card-discover.gif');
+}
+
+.jcb {
+  background-image: url('../../image/card-jcb.gif');
+}
+
+.diners_club {
+  background-image: url('../../image/card-diners.gif');
+}
+
+.mir {
+  background-image: url('../../image/card-mir.gif');
+}
+
+.card {
+  position: absolute;
+  clip: rect(1px, 1px, 1px, 1px); 
+}
+
+.disactive {
+  background-position: 0 -25px;
+}
+
+.error {
+  position:absolute;
+  display: none;
+  width: 100%;
+  height: 12px;
+  text-align: center;
+  color:rgb(255, 0, 0);
+  bottom: -8px;
+}
+
+.error-text {
+  color:rgb(255, 0, 0);
+  font-size: 12px;
+}
+
+.active{
+  display: block;
+}
